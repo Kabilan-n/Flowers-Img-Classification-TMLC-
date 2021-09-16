@@ -8,3 +8,4 @@
 
 ## Streamlit app 
 
+![alt text](https://github.com/Kabilan-n/Flowers-Img-Classification-TMLC-/blob/main/streamlit/streamlit.png?raw=true)
