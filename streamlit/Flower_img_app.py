@@ -24,7 +24,6 @@ elif choose_model == 'EfficientNet':
 
     
 from PIL import Image, ImageOps
-from resizeimage import resizeimage
 import numpy as np
 def import_and_predict(image_data, model):
     
