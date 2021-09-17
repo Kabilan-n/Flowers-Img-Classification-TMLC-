@@ -1,7 +1,6 @@
 import tensorflow as tf
 import os
 eff_model = tf.keras.models.load_model(os.path.join("streamlit/model/","eff_model.hdf5"))
-#eff_model = tf.keras.models.load_model('model/eff_model.hdf5',compile=False)
 MobileNet_model = tf.keras.models.load_model(os.path.join("streamlit/model/","MobileNet_model.hdf5"))
 #res_model =  tf.keras.models.load_model('model\Res_model.h5',compile=False)
 #DenseNet_model =  tf.keras.models.load_model('model\DenseNet_model.hdf5',compile=False)
@@ -13,7 +12,7 @@ st.write("""
          """
          )
 st.write("This is a simple image classification web app to predict the name of the Flower")
-file = st.file_uploader("Please upload an image file", type=["jpg", "png","jpeg"])
+file = st.file_uploader("Please upload an image file", type=["jpg","jpeg"])
 choose_model = st.selectbox('Select a trained model:', ('EfficientNet','MobileNet'))
 
 if choose_model == 'MobileNet':
