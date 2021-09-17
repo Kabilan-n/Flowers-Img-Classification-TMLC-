@@ -1,5 +1,7 @@
 import tensorflow as tf
-eff_model = tf.keras.models.load_model('model/eff_model.hdf5',compile=False)
+import os
+eff_model = load_model(os.path.join("./model/","eff_model.hdf5"))
+#eff_model = tf.keras.models.load_model('model/eff_model.hdf5',compile=False)
 MobileNet_model = tf.keras.models.load_model('model/MobileNet_model.hdf5',compile=False)
 #res_model =  tf.keras.models.load_model('model\Res_model.h5',compile=False)
 #DenseNet_model =  tf.keras.models.load_model('model\DenseNet_model.hdf5',compile=False)
