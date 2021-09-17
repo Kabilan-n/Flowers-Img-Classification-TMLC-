@@ -1,5 +1,6 @@
 import tensorflow as tf
 import os
+!pip install imageresize
 eff_model = tf.keras.models.load_model(os.path.join("streamlit/model/","eff_model.hdf5"))
 #eff_model = tf.keras.models.load_model('model/eff_model.hdf5',compile=False)
 MobileNet_model = tf.keras.models.load_model(os.path.join("streamlit/model/","MobileNet_model.hdf5"))
