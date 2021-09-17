@@ -55,7 +55,7 @@ if file is None:
     st.text("Please upload an image file")
 else:
     image = Image.open(file)
-    image = image.resize((500,500),Image.ANTIALIAS)
+    image = image.resize(224,224)
     st.image(image, use_column_width=True)
     X_val = validate_set(image)
 
