@@ -12,7 +12,7 @@ st.write("""
          """
          )
 st.write("This is a simple image classification web app to predict the name of the Flower")
-file = st.file_uploader("Please upload an image file", type=["jpg","jpeg"])
+file = st.file_uploader("Please upload an image file {.jpg| .jpeg}", type=["jpg","jpeg"])
 choose_model = st.selectbox('Select a trained model:', ('EfficientNet','MobileNet'))
 
 if choose_model == 'MobileNet':
